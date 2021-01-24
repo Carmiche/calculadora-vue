@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Calculadora con Vue.js</title>
+	<link rel="stylesheet" href="styles/style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+	<div class="contenedor" id="contenedor">
+
+		<div class="calculadora" id="calculadora">
+			<div id="operaciones">{{this.operaciones}}</div>
+			<div id="historial">
+				<h4>Historial:</h4>
+				<div v-html="historial">{{this.historial}}</div>
+				<br>
+				<button class="boton" @click="limpiarHistorial()">Limpiar</button>
+			</div>
+			<div class="panel-numerico">
+				<ul>
+					<li  v-for="(tecla, indice) in teclas"  @click="inicio(indice)" :class="tecla.class">
+						{{tecla.inner}} 
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

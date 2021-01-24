@@ -1,0 +1,84 @@
+*{
+	font-family: "Roboto";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contenedor{
+
+}
+#historial{
+	margin: 2% 0 0 3%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	position: relative;
+	background: #fa0;
+	width: 37%;
+ 	color: #fff;
+	transition: all .6s;
+}
+#historial  div{
+	max-height: 220px ;
+	transition: all .6s;
+	overflow-y: scroll;
+}
+.calculadora{
+	position: relative;
+	padding: 30px 0;
+	background: #555;
+	color: #eee;
+	width: 100%;
+}
+#operaciones{
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 10px 45%;
+	width: 50%;
+	text-align: right;
+	border: 2px solid #eee;
+	overflow-x: auto;
+}
+.panel-numerico{
+	display: inline-block;
+	text-align: center;
+	width: 60%;
+}
+
+.panel-numerico ul li{
+	margin: 10px 3px;
+	padding: 4% 0;
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	width: 20%;
+	border: 2px dashed #eee;
+
+}
+.panel-numerico ul li:hover{
+	background: #eee;
+	color: #333;
+	font-weight: bold;
+	border: 2px solid #333;
+	transition: border .6s, color .3s, background .3s;
+}
+.panel-numerico .borrar{
+	width: 84% !important;
+}
+.boton{
+	width: 80%;
+	padding: 5px 0;
+	margin: 10px auto;
+	border: 2px solid #cfe;
+	background: #555;
+	color: #fff;
+	font-size: 1em;
+	outline: none !important;
+	border-radius: 3px;
+	transition: color .5s,background .4s ease-in-out;
+}
+.boton:hover{
+	background: #ccc;
+	color: #333;
+	font-weight: bold;
+}
